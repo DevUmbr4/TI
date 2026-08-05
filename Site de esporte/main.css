@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #353535;
+    color: white;
+}
+
+main{
+    display: flex;
+    background-color: #161616;
+}
+
+.ultimos_jogos{
+    display: flex;
+    color: white;
+    width: 150px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.lol{
+background-color: rgb(34, 34, 34);
+margin: 5px;
+}
+
+.major{
+background-color: rgb(34, 34, 34);
+margin: 5px;
+}
+
+.vct{
+background-color: rgb(34, 34, 34);
+margin: 5px;
+}

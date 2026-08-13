@@ -4,13 +4,13 @@
 }
 
 header{
-    background-color: #353535;
-    color: white;
+    background-color: #0066FF;
+    color: black;
 }
 
 main{
     display: flex;
-    background-color: #161616;
+    background-color: #0F1117;
 }
 
 .ultimos_jogos{

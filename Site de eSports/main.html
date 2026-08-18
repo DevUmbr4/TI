@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site dos esportes</title>
+    <title>Lusus</title>
     <link rel="stylesheet" href="../Site de eSports/styles/main.css">
 </head>
 
@@ -22,37 +22,86 @@
         </nav>
     </header>
 
+    <script>
+        const botoes = document.querySelectorAll(".navegacao ul li a");
+
+        botoes.forEach(function (botao) {
+
+            botao.addEventListener("mouseenter", function () {
+                botao.classList.add("ativo");
+            });
+
+            botao.addEventListener("mouseleave", function () {
+                botao.classList.remove("ativo");
+            });
+
+        });
+    </script>
+
     <main>
-        <div class="ultimos_jogos">
-            <h3>Últimos Jogos</h3>
-            <div class="lol">
-                <h3>2-1</h3>
+        <div class="noticias">
+            <div class="vct">
+                <iframe src="https://www.youtube.com/embed/TZcH-wkxS68"
+                    title="VCT Americas Kickoff 2026 - Explicação do formato" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <div class="major">
-                <h3>3-0</h3>
+                <iframe></iframe>
             </div>
 
-            <div class="vct">
-                <h3>2-1</h3>
+            <div class="lol">
+                <iframe></iframe>
             </div>
         </div>
 
-        <section class="noticias">
-            <div class="not1"><iframe width="300px" height="100px" src="https://draft5.gg/noticia/m0nesy-revela-multa-da-esl-apos-niko-quebrar-fones-na-final-do-major"></iframe></div>
-            <div class="not2"><iframe width="300px" height="100px" src="https://www.youtube.com/embed/BrLSZ_a_DWs" title="FINAL DO MAJOR! - FAZE x VITALITY - MELHORES MOMENTOS - MAJOR BUDAPESTE 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"></div>
-            <div class="not3"><iframe></iframe></div>
-            <div class="not4"><iframe></iframe></div>
-            <div class="not5"><iframe></iframe></div>
-            <div class="not6"><iframe></iframe></div>
-            <div class="not7"><iframe></iframe></div>
-            <div class="not8"><iframe></iframe></div>
+        <section class="times">
+            <div class="furia">
+                <a href="https://www.instagram.com/furiagg/?hl=pt-br"><img src="./images/Furia_Esports_logo.png"
+                        alt="logo furia"></a>
+            </div>
+
+            <div class="vitality">
+                <a href="https://www.instagram.com/teamvitality/"><img src="./images/Team_Vitality_2021_allmode.png"
+                        alt="logo vitality"></a>
+            </div>
+
+            <div class="g2">
+                <a href="https://www.instagram.com/g2esports/"><img src="./images/G2_Esports_logo.png"
+                        alt="logo g2esports"></a>
+            </div>
+
+            <div class="navi">
+                <a href="https://www.instagram.com/natus_vincere_official/"><img src="./images/Natus_Vincere_logo.png"
+                        alt="logo navi"></a>
+            </div>
+
+            <div class="cloud9">
+                <a href="https://www.instagram.com/cloud9gg/?hl=pt-br"><img src="./images/Cloud9_logo_c._2023.svg.webp"
+                        alt="logo cloud9"></a>
+            </div>
+
+            <div class="nrg">
+                <a href="https://www.instagram.com/nrggram/"><img src="./images/nrg-logo-png_seeklogo-531823.png"
+                        alt="logo nrg"></a>
+            </div>
+
+            <div class="falcons">
+                <a href="https://www.instagram.com/falconsesportsgg/"><img
+                        src="./images/team-falcons-logo-png_seeklogo-556288.png" alt="logo falcons"></a>
+            </div>
+
+            <div class="liquid">
+                <a href="https://www.instagram.com/teamliquidbr/?hl=pt-br"><img src="./images/Teamliquid_logo_blue.png"
+                        alt="logo liquid"></a>
+            </div>
         </section>
 
         <section class="placar">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="cs_major"></div>
+            <div class="lol_worlds"></div>
+            <div class="vct_americas"></div>
         </section>
     </main>
 

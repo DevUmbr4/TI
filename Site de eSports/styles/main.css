@@ -12,7 +12,7 @@ header {
 }
 
 body {
-    background-color: #0F1117;
+    background-color: #080a12;
 }
 
 .logo img {
@@ -65,6 +65,48 @@ main {
     flex-direction: column;
 }
 
+.hero{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.hero_tag{
+    color: #3197fd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero_text{
+    max-width: 600px;
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
+
+.botao_hero{
+    text-decoration: none;
+    color: white;
+    background-color: #0066ff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.botao_hero:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #0066ff, 0 0 30px #1e90ff;
+}
+
 .noticias {
     display: flex;
     color: white;
@@ -72,31 +114,55 @@ main {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-}
-
-.lol {
-    background-color: rgb(34, 34, 34);
-    width: 300px;
-    text-align: center;
-    margin: 5px;
-
-}
-
-.major {
-    background-color: rgb(34, 34, 34);
-    width: 300px;
-    text-align: center;
     margin: 5px;
 }
 
-.vct {
-    background-color: rgb(34, 34, 34);
+.titulo_secao{
+    margin-bottom: 30px;
+}
+
+.titulo_secao p{
+    color: #3197fd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.titulo_secao h2{
+    color: white;
+    font-size: 30px;
+}
+
+.card_noticias {
     width: 300px;
-    text-align: center;
-    margin: 5px;
-    border: 3px solid;
-    border-radius: 5px;
-    border-color: #0066FF;
+    background-color: #151923;
+    border: 1px solid #252b38;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card_noticias:hover{
+    transform: translateY(-8px);
+    border-color: #3197fd;
+    box-shadow: 0 0 15px #0066ff;
+}
+
+.card_noticias iframe{
+    width: 100%;
+    height: 170px;
+    border: none;
+    border-radius: 8px;
+}
+
+.card_noticias h3{
+    color: white;
+    margin-top: 15px;
+}
+
+.card_noticias p{
+    color: #aaaaaa;
+    margin-top: 10px;
 }
 
 .times{
@@ -110,50 +176,32 @@ main {
     gap: 20px;
 }
 
-.furia img{
+.card_times img{
     width: 100px;
     height: 100px;
     margin: 5px;
 }
 
-.vitality img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.cs_major img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }
 
-.g2 img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.lol_worlds img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }
 
-.navi img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.vct_americas img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }
 
-.cloud9 img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-}
-
-.nrg img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-}
-
-.falcons img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-}
-
-.liquid img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+.dota_international img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }

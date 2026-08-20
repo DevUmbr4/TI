@@ -119,6 +119,7 @@ main {
 
 .titulo_secao{
     margin-bottom: 30px;
+    padding: 50px;
 }
 
 .titulo_secao p{
@@ -165,7 +166,7 @@ main {
     margin-top: 10px;
 }
 
-.times{
+.secao_times{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -176,32 +177,64 @@ main {
     gap: 20px;
 }
 
+.times_sa{
+    width: 250px;
+    background-color: #151923;
+    border: 1px solid #252b38;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;   
+}
+
+.times_sa:hover{
+    transform: translateY(-3px);
+    border-color: #1efd61;
+    box-shadow: 0 0 15px #04f84d;    
+}
+
 .card_times img{
     width: 100px;
     height: 100px;
     margin: 5px;
 }
 
-.cs_major img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+.campeonatos{
+    padding: 50px;
+    border-top: 1px solid #252b38;
 }
 
-.lol_worlds img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+.campeonatos_lista{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.vct_americas img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+.campeonato{
+    width: 200px;
+    background-color: #151923;
+    border: 1px solid #252b38;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.dota_international img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+.campeonato:hover{
+    transform: translateY(-5px);
+    border-color: #3197fd;
+}
+
+.campeonato img{
+    width: 100px;
+    height: 100px;
+}
+
+.campeonato h3{
+    color: #3197fd;
+}
+
+.campeonato p{
+    color: #aaaaaa;
+    margin-top: 10px;
 }

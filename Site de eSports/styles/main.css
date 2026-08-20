@@ -1,30 +1,40 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+
+body {
+    background-color: #080a12;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
 
 header {
     background-image: linear-gradient(to right, #000000, #0066FF);
     height: 80px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-body {
-    background-color: #080a12;
-}
 
 .logo img {
     width: 80px;
     height: 80px;
 }
 
+
+/* NAVEGAÇÃO */
+
 .navegacao {
     display: flex;
-    list-style-type: none;
-    flex-direction: row-reverse;
 }
+
 
 .navegacao ul {
     display: flex;
@@ -32,209 +42,512 @@ body {
     align-items: center;
 }
 
-.navegacao ul li a.ativo {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #1e90ff,
-                0 0 30px #0066ff;
-    background-color: #1a1f2b;
-}
 
 .navegacao ul li a {
     display: inline-block;
+
     text-decoration: none;
     color: white;
+
     margin: 5px;
+
     background-color: #252525;
+
     border-radius: 50px;
-    border-color: #3197fd;
     border: 2px solid #3197fd;
+
     padding: 8px 12px;
+
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+    transition: 0.3s;
 }
 
-.navegacao ul li a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 15px #1e90ff, 0 0 30px #0066ff;
+
+.navegacao ul li a.ativo {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 15px #1e90ff,
+        0 0 30px #0066ff;
+
     background-color: #1a1f2b;
 }
 
 main {
     display: flex;
-    background-color: #0F1117;
     flex-direction: column;
+
+    background-color: #0F1117;
 }
 
-.hero{
+.hero {
     min-height: 350px;
+
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
+
     text-align: center;
+
     padding: 40px;
+
     color: white;
 }
 
-.hero_tag{
+
+.hero_tag {
     color: #3197fd;
+
     font-weight: bold;
+
     margin-bottom: 10px;
 }
 
-.hero h1{
+
+.hero h1 {
     font-size: 60px;
+
     margin-bottom: 15px;
 }
 
-.hero_text{
+
+.hero_text {
     max-width: 600px;
+
     color: #aaaaaa;
+
     margin-bottom: 25px;
 }
 
-.botao_hero{
+
+.botao_hero {
     text-decoration: none;
+
     color: white;
+
     background-color: #0066ff;
+
     padding: 12px 25px;
+
     border-radius: 25px;
+
     transition: 0.3s;
 }
 
-.botao_hero:hover{
+
+.botao_hero:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px #0066ff, 0 0 30px #1e90ff;
+
+    box-shadow:
+        0 0 15px #0066ff,
+        0 0 30px #1e90ff;
 }
 
-.noticias {
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 5px;
+
+/* TÍTULOS DAS SEÇÕES */
+
+.titulo_secao {
+    padding: 50px 8% 30px 8%;
 }
 
-.titulo_secao{
-    margin-bottom: 30px;
-    padding: 50px;
-}
 
-.titulo_secao p{
+.titulo_secao p {
     color: #3197fd;
+
     font-size: 14px;
+
     font-weight: bold;
+
     margin-bottom: 5px;
 }
 
-.titulo_secao h2{
+
+.titulo_secao h2 {
     color: white;
+
     font-size: 30px;
 }
 
+
+/* NOTÍCIAS */
+
+.noticias {
+    display: flex;
+
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 20px;
+
+    padding: 0 8% 50px 8%;
+}
+
+
 .card_noticias {
     width: 300px;
+
     background-color: #151923;
+
     border: 1px solid #252b38;
+
     border-radius: 10px;
+
     padding: 15px;
+
     transition: 0.3s;
 }
 
-.card_noticias:hover{
+
+.card_noticias:hover {
     transform: translateY(-8px);
+
     border-color: #3197fd;
+
     box-shadow: 0 0 15px #0066ff;
 }
 
-.card_noticias iframe{
+
+.card_noticias iframe {
     width: 100%;
     height: 170px;
+
     border: none;
+
     border-radius: 8px;
 }
 
-.card_noticias h3{
+
+.card_noticias h3 {
     color: white;
+
     margin-top: 15px;
 }
 
-.card_noticias p{
+
+.card_noticias p {
     color: #aaaaaa;
+
     margin-top: 10px;
 }
 
-.secao_times{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+/* TIMES */
+
+.secao_times {
     width: 100%;
-    max-width: 600px;
-    margin: 30px auto;
-    gap: 20px;
-}
 
-.times_sa{
-    width: 250px;
-    background-color: #151923;
-    border: 1px solid #252b38;
-    border-radius: 10px;
-    padding: 15px;
-    transition: 0.3s;   
-}
-
-.times_sa:hover{
-    transform: translateY(-3px);
-    border-color: #1efd61;
-    box-shadow: 0 0 15px #04f84d;    
-}
-
-.card_times img{
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-}
-
-.campeonatos{
-    padding: 50px;
     border-top: 1px solid #252b38;
 }
 
-.campeonatos_lista{
+
+/*
+Aqui está a principal mudança.
+
+O .card_times agora é flex e row,
+então os cards ficam lado a lado.
+*/
+
+.card_times {
     display: flex;
+
+    flex-direction: row;
+
     justify-content: center;
+
+    align-items: flex-start;
+
     flex-wrap: wrap;
+
     gap: 20px;
+
+    padding: 0 8% 50px 8%;
 }
 
-.campeonato{
-    width: 200px;
+
+/* CARDS DOS TIMES */
+
+.times_sa,
+.times_na,
+.times_eur,
+.times_as {
+    width: 250px;
+
     background-color: #151923;
+
     border: 1px solid #252b38;
+
     border-radius: 10px;
-    padding: 25px;
-    text-align: center;
+
+    padding: 15px;
+
     transition: 0.3s;
 }
 
-.campeonato:hover{
-    transform: translateY(-5px);
-    border-color: #3197fd;
+
+/* TÍTULO DOS CARDS */
+
+.times_sa h3,
+.times_na h3,
+.times_eur h3,
+.times_as h3 {
+    color: white;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
 }
 
-.campeonato img{
+
+/* HOVER AMÉRICA DO SUL */
+
+.times_sa:hover {
+    transform: translateY(-5px);
+
+    border-color: #1efd61;
+
+    box-shadow: 0 0 15px #04f84d;
+}
+
+
+/* HOVER AMÉRICA DO NORTE */
+
+.times_na:hover {
+    transform: translateY(-5px);
+
+    border-color: #1ea4fd;
+
+    box-shadow: 0 0 15px #0482f8;
+}
+
+
+/* HOVER EUROPA */
+
+.times_eur:hover {
+    transform: translateY(-5px);
+
+    border-color: #fde71e;
+
+    box-shadow: 0 0 15px #f8cb04;
+}
+
+
+/* HOVER ÁSIA */
+
+.times_as:hover {
+    transform: translateY(-5px);
+
+    border-color: #fd3838;
+
+    box-shadow: 0 0 15px #fd1414;
+}
+
+
+/* CADA TIME */
+
+.time {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 5px;
+
+    border-bottom: 1px solid #252b38;
+}
+
+
+/*
+Remove a borda do último time.
+*/
+
+.time:last-child {
+    border-bottom: none;
+}
+
+
+/* LOGO DO TIME */
+
+.time > img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+/* REDES SOCIAIS */
+
+.redes {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.redes a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+
+.redes a:hover {
+    transform: scale(1.15);
+}
+
+
+/* LOGOS DO INSTAGRAM E X */
+
+.redes img {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+}
+
+
+/* CAMPEONATOS */
+
+.campeonatos {
+    width: 100%;
+
+    border-top: 1px solid #252b38;
+
+    padding-bottom: 50px;
+}
+
+
+.campeonatos_lista {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    padding: 0 8%;
+}
+
+
+.campeonato {
+    width: 200px;
+
+    background-color: #151923;
+
+    border: 1px solid #252b38;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.campeonato:hover {
+    transform: translateY(-5px);
+
+    border-color: #3197fd;
+
+    box-shadow: 0 0 15px #0066ff;
+}
+
+
+.campeonato img {
     width: 100px;
     height: 100px;
+
+    object-fit: contain;
 }
 
-.campeonato h3{
+
+.campeonato h3 {
     color: #3197fd;
+
+    margin-top: 10px;
 }
 
-.campeonato p{
+
+.campeonato p {
     color: #aaaaaa;
+
     margin-top: 10px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .card_times {
+        padding: 0 5% 50px 5%;
+    }
+
+    .titulo_secao {
+        padding: 50px 5% 30px 5%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 10px;
+    }
+
+
+    .navegacao ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .titulo_secao h2 {
+        font-size: 24px;
+    }
+
+
+    .times_sa,
+    .times_na,
+    .times_eur,
+    .times_as {
+        width: 100%;
+    }
+
+
+    .card_noticias {
+        width: 100%;
+    }
+
 }

@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Meta Games</title>
-
+    <title>Lusus</title>
     <link rel="stylesheet" href="./styles/meta.css">
+    <link rel="icon" type="image/png" href="./images/ChatGPT Image 19 de ago. de 2026, 10_59_01.png">
 </head>
 
 <body>
@@ -15,17 +14,42 @@
     <header>
 
         <div class="logo">
-            META <span>GAMES</span>
+            <img src="./images/ChatGPT Image 19 de ago. de 2026, 10_59_01.png" alt="Logo do Lusus">
         </div>
 
-        <nav>
-            <a href="./main.html">Início</a>
-            <a href="./meta.html">Meta</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="#cs">CS2</a>
+        <nav class="navegacao">
+            <ul>
+                <li>
+                    <a href="./main.html">Início</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="#">Estatísticas</a>
+                </li>
+            </ul>
         </nav>
 
     </header>
+
+    <script>
+
+        const botoes = document.querySelectorAll(".navegacao ul li a");
+
+        botoes.forEach(function (botao) {
+
+            botao.addEventListener("mouseenter", function () {
+
+                botao.classList.add("ativo");
+
+            });
+
+            botao.addEventListener("mouseleave", function () {
+
+                botao.classList.remove("ativo");
+
+            });
+
+        });
+
+    </script>
 
 
     <main id="inicio">
@@ -573,11 +597,10 @@
 
     <footer>
 
-        <h2>META <span>GAMES</span></h2>
+        <h2>LUSUS</h2>
 
         <p>
-            Seu portal sobre o competitivo de Valorant,
-            League of Legends, Counter-Strike 2 e Dota 2.
+            O mundo dos games competitivos em um só lugar.
         </p>
 
 
@@ -595,7 +618,7 @@
 
 
         <p class="copyright">
-            © 2026 META GAMES • Todos os direitos reservados
+            © 2026 Lusus • Todos os direitos reservados
         </p>
 
     </footer>

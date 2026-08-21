@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lusus</title>
     <link rel="stylesheet" href="./styles/sobre.css">
+    <link rel="icon" type="image/png" href="./images/ChatGPT Image 19 de ago. de 2026, 10_59_01.png">
 </head>
 
 <body>
 
     <header>
-        <div class="logo">Lusus</div>
+        <div class="logo">
+            <img src="./images/ChatGPT Image 19 de ago. de 2026, 10_59_01.png" alt="Logo do Lusus">
+        </div>
 
-        <nav>
-            <a href="./main.html">Início</a>
-            <a href="#">Estatísticas</a>
-            <a href="./meta.html">Meta</a>
+        <nav class="navegacao">
+            <ul>
+                <li>
+                    <a href="./main.html">Início</a>
+                    <a href="./meta.html">Meta</a>
+                    <a href="#">Estatísticas</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
+    <script>
+
+        const botoes = document.querySelectorAll(".navegacao ul li a");
+
+        botoes.forEach(function (botao) {
+
+            botao.addEventListener("mouseenter", function () {
+
+                botao.classList.add("ativo");
+
+            });
+
+            botao.addEventListener("mouseleave", function () {
+
+                botao.classList.remove("ativo");
+
+            });
+
+        });
+
+    </script>
 
     <section class="hero" id="inicio">
 
         <span class="hero-tag">BEM-VINDO AO LUSUS</span>
 
-        <h1>Lusus</h1>
+        <h1>LUSUS</h1>
 
         <p>
-            O Lusus é site que foi criado pensando nas pessoas amantes dos jogos,
+            O Lusus um é site que foi criado pensando nas pessoas amantes dos jogos,
             que também amam o cenário competitivo dos eSports.
         </p>
        
@@ -71,7 +99,7 @@
 
     <footer>
 
-        <h2>Lusus</h2>
+        <h2>LUSUS</h2>
 
         <p>
             O mundo dos games competitivos em um só lugar.
